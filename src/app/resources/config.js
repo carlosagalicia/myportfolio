@@ -4,8 +4,6 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
 };
 
 // Enable password protection on selected routes
@@ -17,11 +15,11 @@ const protectedRoutes = {
 const style = {
   theme: "dark", // dark | light
   neutral: "gray", // sand | gray | slate
-  brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  brand: "blue", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   accent: "orange", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
-  solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
+  solidStyle: "plastic", // flat | plastic
+  border: "rounded", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
 };
@@ -31,7 +29,7 @@ const effects = {
     cursor: true,
     x: 0,
     y: 0,
-    radius: 75,
+    radius: 200,
   },
   gradient: {
     display: true,
@@ -42,13 +40,13 @@ const effects = {
     tilt: 0,
     colorStart: "brand-background-strong",
     colorEnd: "static-transparent",
-    opacity: 50,
+    opacity: 10,
   },
   dots: {
     display: true,
-    size: 2,
+    size: 24,
     color: "brand-on-background-weak",
-    opacity: 20,
+    opacity: 50,
   },
   lines: {
     display: false,
@@ -63,8 +61,8 @@ const effects = {
 };
 
 const display = {
-  location: true,
-  time: true,
+  location: false,
+  time: false,
 };
 
 const mailchimp = {
