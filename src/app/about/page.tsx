@@ -230,7 +230,7 @@ export default function About() {
                     </Column>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
+                        {experience.images.map((image: { width: number; height: number; alt: string; src: string }, index: number) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
@@ -294,7 +294,7 @@ export default function About() {
                     </Text>
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
+                        {skill.images.map((image: { width: number; height: number; alt: string; src: string }, index: number) => (
                           <Flex
                             key={index}
                             border="neutral-medium"

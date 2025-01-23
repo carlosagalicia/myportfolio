@@ -12,6 +12,16 @@ const person = {
   languages: ["English", "Spanish"],
 };
 
+const newsletter = {
+  display: false,
+  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  description: (
+    <>
+      ---
+    </>
+  ),
+};
+
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
@@ -131,11 +141,31 @@ const about = {
   },
 };
 
+const blog = {
+  label: "Blog",
+  title: "Writing about design and tech...",
+  description: `Read what ${person.name} has been up to recently`,
+
+};
+
 const work = {
   label: "Work",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
 };
 
+const gallery = {
+  label: "Gallery",
+  title: "My photo gallery",
+  description: `A photo collection by ${person.name}`,
+  // Images from https://pexels.com
+  images: [
+    {
+      src: "/images/profile_image.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+  ],
+};
 
-export { person, social, home, about, work};
+export { person, social, newsletter, home, about, blog, work, gallery };
