@@ -128,7 +128,7 @@ export default function Home() {
                             <Button
                                 id="cv"
                                 data-border="rounded"
-                                href="https://drive.google.com/file/d/1SVQpzCuMOUbCxlSv__QPbG36eYAE3Q7C/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1UqTzk_ZdufpfqfpDdES7RNYENzEytQdL/view?usp=sharing"
                                 variant="secondary"
                                 size="m"
                                 arrowIcon
