@@ -14,7 +14,7 @@ const person = {
 
 const newsletter = {
     display: false,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
+    title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
     description: <>---</>,
 };
 
@@ -91,7 +91,7 @@ const about = {
                 achievements: [
                     <>
                         Designed and implemented a relational database to manage
-                        inventory and sales for the company's container
+                        inventory and sales for the company&apos;s container
                         products, ensuring accurate and continuously updated
                         records.
                     </>,
