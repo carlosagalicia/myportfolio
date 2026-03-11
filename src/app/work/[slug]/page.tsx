@@ -150,7 +150,7 @@ export default async function Project({ params }: WorkParams) {
                         {formatDate(post.metadata.publishedAt)}
                     </Text>
                 </Flex>
-                <pre>{post.content}</pre>
+                <CustomMDX source={post.content} />
             </Column>
             <ScrollToHash />
         </Column>

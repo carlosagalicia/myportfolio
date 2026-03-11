@@ -132,7 +132,7 @@ export default async function Blog({ params }: BlogParams) {
                 </Text>
             </Row>
             <Column as="article" fillWidth>
-                <pre>{post.content}</pre>
+                <CustomMDX source={post.content} />
             </Column>
             <ScrollToHash />
         </Column>
